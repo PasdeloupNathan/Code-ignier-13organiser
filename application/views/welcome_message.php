@@ -4,7 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+
+	<title>Aller l'OM</title>
+
+
 
 	<style type="text/css">
 
@@ -12,20 +15,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	::-moz-selection { background-color: #E13300; color: white; }
 
 	body {
-		background-color: aqua;
+		background-color: #222222;
 		margin: 40px;
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
+		color: #0e96d2;
 	}
 
 	a {
-		color: #003399;
+		color: #0e96d2;
+
 		background-color: transparent;
 		font-weight: normal;
 	}
 
 	h1 {
-		color: #444;
+		color: #0e96d2;
+
 		background-color: transparent;
 		border-bottom: 1px solid #D0D0D0;
 		font-size: 19px;
@@ -59,6 +64,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	#container {
+
+		background-color: #ffffff;
+
 		margin: 10px;
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
@@ -66,21 +74,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 </head>
 <body>
-<a href="<?= site_url("Eleve/index2"); ?>">PARIS</a>
+
+
 <div id="container">
-	<h1>Hello World</h1>
+	<h1>Aller l'OM</h1>
 
 	<div id="body">
-		<p>Sentir le merveilleux</p>
+		<p>Prono Demi LDC</p>
+
+		<p>Psg - Leizpig</p>
+		<code>2 - 1 pour Leizpig</code>
+
+		<p>Lyon - Bayern</p>
+		<code>3 - 0 pour Bayern</code>
+
+		<p>Meilleur equipe de france > <a href="https://www.om.fr/fr">ICI</a>.</p>
+		<br>
+		<a href="<?= site_url("eleve/index"); ?>">eleves</a>
 		
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
@@ -88,3 +100,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </body>
 </html>
+

@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost/democi/';
+$config['base_url'] = 'http://localhost/Code-ignier-13organiser/';
 
 
 

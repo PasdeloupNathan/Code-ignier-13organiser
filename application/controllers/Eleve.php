@@ -9,7 +9,7 @@ class Eleve extends CI_Controller {
 
 
 
-public function index()
+public function index2()
 	{
 		$this->load->view('eleve_page');
     }

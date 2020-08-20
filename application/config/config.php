@@ -28,6 +28,7 @@ $config['base_url'] = 'http://localhost/Code-ignier-13organiser/';
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Index File

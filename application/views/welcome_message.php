@@ -88,6 +88,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>Lyon - Bayern</p>
 		<code>3 - 0 pour Bayern</code>
 
+		<p>Prono Demi LDC</p>
+
+		<p>Paris - Bayern</p>
+		<code>5 - 3 pour Bayern</code>
+
 		<p>Meilleur equipe de france > <a href="https://www.om.fr/fr">ICI</a>.</p>
 		<br>
 		<a href="<?= site_url("eleve/index"); ?>">eleves</a>

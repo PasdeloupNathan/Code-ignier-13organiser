@@ -8,6 +8,7 @@ class Eleve extends CI_Controller {
 
 
 
+
 public function index()
 	{
 		$this->load->view('eleve_page');
@@ -15,5 +16,6 @@ public function index()
     
 
 }
+
 
 

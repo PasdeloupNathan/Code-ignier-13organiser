@@ -4,7 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+
 	<title>Aller l'OM</title>
+
+
 
 	<style type="text/css">
 
@@ -20,12 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	a {
 		color: #0e96d2;
+
 		background-color: transparent;
 		font-weight: normal;
 	}
 
 	h1 {
 		color: #0e96d2;
+
 		background-color: transparent;
 		border-bottom: 1px solid #D0D0D0;
 		font-size: 19px;
@@ -59,7 +64,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	#container {
+
 		background-color: #ffffff;
+
 		margin: 10px;
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
@@ -67,6 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 </head>
 <body>
+
 
 <div id="container">
 	<h1>Aller l'OM</h1>
@@ -84,6 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<br>
 		<a href="<?= site_url("eleve/index"); ?>">eleves</a>
 		
+
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
@@ -91,5 +100,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </body>
 </html>
-
 

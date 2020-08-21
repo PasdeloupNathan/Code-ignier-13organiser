@@ -1,9 +1,34 @@
- <?php $this->load->view('templates/header');?>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<head>
+    <meta charset="utf-8">
+	<title>Aller l'OM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+
+ <style type="text/css">
+
+body{
+    text-align:center;
+}
+form{
+    text-align:center;
+}
+
+</style>
+
+ 
  <!-- container --> 
   <section class="showcase">
     <div class="container">
-      <div class="pb-2 mt-4 mb-2 border-bottom">
-        <h2>CodeIgniter Login and Registration System using MySQL with Bootstrap 4</h2>
+      <div class="pb-2 mt-4 mb-2 ">
+        <h2>Inscription</h2>
       </div> 
       <form action="<?php print site_url();?>auth/actionRegister" class="remember-login-frm" id="remember-login-frm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
       <div class="row justify-content-center">
@@ -11,77 +36,36 @@
 		<div class="row"><ul style="color: #CB0000"><?php echo validation_errors('<li>', '</li>'); ?></div>
         <!--Form with header-->
             <div class="card border-info rounded-0">
-                <div class="card-header p-0">
-                    <div class="bg-login-page text-white text-center py-2">
-                        <h3><i class="fas fa-user-plus"></i> Registration</h3>
-                    </div>
-                </div>
+                
                 <div class="card-body p-3">                
                     <!--Body-->
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-user"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="first-name" name="first_name" placeholder="First Name">
-                        </div>
+                    
+
+            <!-- mail input  -->
+                <div class="form-group ">
+                    <div class="col" ">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email *" style="border:solid 1px #707070;">
                     </div>
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-user"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Last Name">
-                        </div>
+                </div>
+
+            <!-- Password input-->
+                <div class="form-group">
+                    <div class="col" style="padding-top: 5%;">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password *" style="border:solid 1px #707070;">
                     </div>
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-envelope-square"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Email *">
-                        </div>
+                </div>
+
+
+            <!-- Password conf input-->
+            <div class="form-group">
+                    <div class="col" style="padding-top: 5%;">
+                        <input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Confirm Password *" style="border:solid 1px #707070;">
                     </div>
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-key"></i></div>
-                            </div>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Password *">
-                        </div>
-                    </div> 
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-key"></i></div>
-                            </div>
-                            <input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Confirm Password *">
-                        </div>
-                    </div> 
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-phone-square"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="contact-no" name="contact_no" placeholder="Contact No">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="Address">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="dob" name="dob" placeholder="DOB">
-                        </div>
-                    </div>
+                </div>
+
+                   
+                   
+                   
                                                        
                     <div class="text-center">
                         <button type="submit" id="contact-send-a" class="btn btn-info btn-block rounded-0 py-2">Register</button>
@@ -93,5 +77,4 @@
         </div>
     </form>
     </div>
-  </section>
- <?php $this->load->view('templates/footer');?>        
+  </section>     

@@ -1,5 +1,27 @@
- <?php $this->load->view('templates/header');?>
- <style>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<head>
+    <meta charset="utf-8">
+	<title>Aller l'OM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+
+ <style type="text/css">
+
+body{
+    text-align:center;
+}
+form{
+    text-align:center;
+}
+
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;

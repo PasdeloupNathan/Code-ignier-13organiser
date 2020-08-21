@@ -37,15 +37,14 @@ form{
                 <!-- Text input-->
                 <div class="form-group ">
                     <div class="col" style="padding-top: 15%;">
-                        <input id="textinput" name="textinput" type="email" placeholder="Email" class="form-control input-md" required="" style="border:solid 1px #707070;">
-
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email *" style="border:solid 1px #707070;">
                     </div>
                 </div>
 
                 <!-- Password input-->
                 <div class="form-group">
                     <div class="col" style="padding-top: 5%;">
-                        <input id="" name="" type="password" placeholder="Mot de passe" class="form-control input-md" required="" style="border:solid 1px #707070;">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password *" style="border:solid 1px #707070;">
 
                     </div>
                 </div>

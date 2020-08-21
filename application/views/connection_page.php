@@ -38,7 +38,7 @@ form{
                 <!-- Text input-->
                 <div class="form-group ">
                     <div class="col" style="padding-top: 15%;">
-                        <input id="textinput" name="textinput" type="email" placeholder="Email" class="form-control input-md" required="" style="border:solid 1px #707070;">
+                        <input id="textinput" name="textinput" type="email" placeholder="Email" class="form-control input-md" required="" style="border:solid 1px #707070;" value="<?php if(isset($_COOKIE["loginId"])) { echo $_COOKIE["loginId"]; } ?>">
 
                     </div>
                 </div>
@@ -46,7 +46,7 @@ form{
                 <!-- Password input-->
                 <div class="form-group">
                     <div class="col" style="padding-top: 5%;">
-                        <input id="" name="" type="password" placeholder="Mot de passe" class="form-control input-md" required="" style="border:solid 1px #707070;">
+                        <input id="" name="" type="password" placeholder="Mot de passe" class="form-control input-md" required="" style="border:solid 1px #707070;" >
 
                     </div>
                 </div>
